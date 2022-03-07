@@ -90,36 +90,33 @@ const string =`
     top: 170px;
     margin-left: -100px;
   }
-  .mouth .up {
+  .mouth .up{
     position: relative;
-    top: -10px;
+    top: -20px;
+    z-index: 1;
   }
-  .mouth .up .lip {
+  .mouth .up .lip{
     border: 3px solid black;
     height: 30px;
     width: 100px;
+    background: #ffe600;
     border-top-color: transparent;
     border-right-color: transparent;
+    position: relative;
     position: absolute;
     left: 50%;
-    z-index: 1;
-    background: #ffe600;
+    margin-left: -50px;
   }
-  .mouth .up .lip.left {
+  .mouth .up .lip.left{
     border-radius: 0 0 0 50px;
-  
-    transform: rotate(-20deg);
-  
-    margin-left: -100px;
+    transform: rotate(-15deg) translateX(-53px);
   }
-  .mouth .up .lip.right {
-    border-radius: 0 0 50px 0;
-  
-    transform: rotate(20deg);
-    margin-left: 2px;
+  .mouth .up .lip.right{
+    border-radius: 0 0 50px 0px;
+    transform: rotate(15deg) translateX(53px);
   }
-  .mouth .up .lip::before {
-    content: "";
+  .mouth .up .lip::before{
+    content: '';
     display: block;
     width: 7px;
     height: 30px;
@@ -127,11 +124,10 @@ const string =`
     bottom: 0;
     background: #ffe600;
   }
-  .mouth .up .lip.left::before {
+  .mouth .up .lip.left::before{
     right: -6px;
   }
-  
-  .mouth .up .lip.right::before {
+  .mouth .up .lip.right::before{
     left: -6px;
   }
   .mouth .down {
